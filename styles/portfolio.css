@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 .header{
@@ -7,6 +9,8 @@
     background-image: url('../images/header_bg.png'),url('../images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right,left;
+    padding-top: 0;
+    margin-top: 0;
     
     
 }
@@ -55,6 +59,7 @@ nav li{
    grid-template-columns: repeat(2,1fr);
      margin: 0 100px;
      justify-content: space-between;
+     max-height: 100vh;
 }
 .banner-title{
     font-weight: 700;
@@ -111,3 +116,86 @@ main{
     font-size: 10px;
     color: #474747;
 }
+/* What i do styles */
+section{
+    margin-top: 130px;
+}
+.what-i-do{
+     margin-top: 130px; 
+}
+.skills-container{
+    display: flex;
+    gap:20px
+}
+.skill{
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px;
+    border: 5px;
+    padding: 20px;
+}
+.skill-title{
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.skill-description{
+    color: #757575;
+}
+    /* Resume style */
+    .resume-content{
+        display: flex;
+        gap:20px;
+        
+    }
+
+    .resume-item{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .resume-title{
+        font-weight: 500;
+        font-size: 20px;
+        color: #474747;
+        margin-bottom: 10px;
+
+    }
+    .resume .sub-title{
+        color:#757575;
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .resume .description{
+        color: #757575;
+    }
+    .resume-button{
+        margin-top: 10%;
+        text-align: center;
+    }
+    /* Contact stryles */
+    .contact{
+        display: flex;
+        gap: 40px;
+        background: #FFF8F3;
+        padding: 130px 100px;
+    }
+    .contact .section-title{
+        text-align: left;
+    }
+    .contact input,textarea{
+        margin-bottom: 24px;
+        border: 0;
+     padding: 1px 40px;
+    }
+
+    input{
+        height: 64px;
+        
+    }
+    .contact a{
+        text-decoration: none;
+    }
+    .contact-left{
+        min-width: 50%;
+    }
